@@ -33,3 +33,4 @@ dict_data['Language'] = list_language
 dict_data['Time'] = list_time
 
 df = pd.DataFrame(dict_data)    # Making DataFrame
+print(df)
