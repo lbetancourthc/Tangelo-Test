@@ -1,6 +1,6 @@
 # Tangelo-Test
 
-![GitHub last commit](https://img.shields.io/github/last-commit/Tangelo-Test?style=flat)
+![GitHub last commit](https://img.shields.io/github/last-commit/lbetancourthc/Tangelo-Test?style=flat)
 
 Este repositorio contiene el desarrollo de una prueba técnica, la cual consiste en:
 
