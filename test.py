@@ -47,28 +47,31 @@ def making_df(data):            # Making DataFrame
 
     return dict_data, df, time_max, time_min, time_avr    
 
-dict_data, df, time_max, time_min, time_avr = making_df(data_json)
 
-print(df)
-print('\n------------------------------------------------------------')
-print('Times:\n', '\tMax Time', time_max, '\n\tMin Time', time_min, '\n\tAvr Time', time_avr, 'us')
-print('\n------------------------------------------------------------\n')
-util.get_json_from_dict(dict_data)
+if __name__ == "__main__":
+    
+    dict_data, df, time_max, time_min, time_avr = making_df(data_json)
 
-# Storing the data in the database
-conn = util.sql_conn()                  # Making the connection
-cursor_obj = conn.cursor()
+    print(df)
+    print('\n------------------------------------------------------------')
+    print('Times:\n', '\tMax Time', time_max, '\n\tMin Time', time_min, '\n\tAvr Time', time_avr, 'us')
+    print('\n------------------------------------------------------------\n')
+    util.get_json_from_dict(dict_data)
 
-# Creating table and columns
-countries_table = 'countries'
-data_table = 'id integer, region text, city_name text, language text, time text'
-data_table_names = 'id, region, city_name, language, time'
-util.sql_table(conn, countries_table, data_table)
+    # Storing the data in the database
+    conn = util.sql_conn()                  # Making the connection
+    cursor_obj = conn.cursor()
 
-# Insert data into the table
-util.sql_insert_df(conn, countries_table, data_table_names, df)
+    # Creating table and columns
+    countries_table = 'countries'
+    data_table = 'id integer, region text, city_name text, language text, time text'
+    data_table_names = 'id, region, city_name, language, time'
+    util.sql_table(conn, countries_table, data_table)
 
-# View table content from DB: If want to view the content uncomment the follow lines
-'''tab = cursor_obj.execute('SELECT * FROM ' + countries_table)
-for row in tab:
-    print(row)'''
+    # Insert data into the table
+    util.sql_insert_df(conn, countries_table, data_table_names, df)
+
+    # View table content from DB: If want to view the content uncomment the follow lines
+    '''tab = cursor_obj.execute('SELECT * FROM ' + countries_table)
+    for row in tab:
+        print(row)'''
