@@ -32,3 +32,5 @@ Este repositorio contiene el desarrollo de una prueba técnica, la cual consiste
 ## Diagrama del procedimiento:
 
 ![image info](Images/Tangelo_flow.png)
+
+Nota: Al ejecutar el script principal `test.py` se podrá visualizar la tabla creada junto con los tiempos max, min y promedio que tarda en crear una fila, además se guardaran los datos en una BD creada `countries_db.db` y en formato JSON `data.json`.
