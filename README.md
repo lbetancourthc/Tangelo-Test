@@ -29,4 +29,6 @@ Este repositorio contiene el desarrollo de una prueba técnica, la cual consiste
   * `storing_db.py`: Contiene el procedimiento para guardar los datos en la BD.
   * `to_json.py`: Contiene el procedimiento para guardar los datos en formato JSON.
 
-## Diagrama del proceso:
+## Diagrama del procedimiento:
+
+![image info](C:/Users/57311/Downloads/Tangelo.png)
