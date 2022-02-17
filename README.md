@@ -31,4 +31,4 @@ Este repositorio contiene el desarrollo de una prueba técnica, la cual consiste
 
 ## Diagrama del procedimiento:
 
-![image info](C:/Users/57311/Downloads/Tangelo.png)
+![image info](Images/Tangelo_flow.png)
