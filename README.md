@@ -2,7 +2,7 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/lbetancourthc/Tangelo-Test?style=flat)
 
-Este repositorio contiene el desarrollo de una prueba técnica, la cual consiste en:
+Este repositorio consiste el desarrollo del siguiente test:
 
 * De https://restcountries.com/ obtenga el nombre del idioma que habla el pais y encriptelo con SHA1
 * En la columna Time ponga el tiempo que tardo en armar la fila (debe ser automatico)
